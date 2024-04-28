@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./icon/avt.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title class="head">Lê Phát Đạt </title>
+    <title>Phát Đạt - Media</title>
+    <!--font awasome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--my css file-->
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body onkeydown="keydownHandler(event)">
-    <canvas id="bgCanvas"></canvas>
-    <div class="main">
-        <div class="container">
-            <div class="center">
-                <div class="avt">
-                    <img src="icon/avt.JPG" alt="">
-                </div>
-                <div class="name">
-                    <span>Đạt KMA</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="icon">
-                    <a href="https://www.facebook.com/" target="_blank" class="facebook">
-                        <img src="./icon/icons8-facebook-100.png" alt="">
-                    </a>
-                    <a href="https://www.tiktok.com/@le_phat_dat_373" target="_blank" class="tiktok">
-                        <img src="./icon/icons8-tiktok-100.png" alt="">
-                    </a>
-                    <a href="" target="_blank" class="instagram">
-                        <img src="./icon/icons8-instagram-100.png" alt="">
-                    </a>
-                    <a href="https://github.com/" target="_blank" class="github">
-                        <img src="./icon/icons8-github-100.png" alt="">
-                    </a>
-                </div>
-            </div>
+<body >
+    <video autoplay muted plays-inline loop>
+        <source src="./image/video (2).mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <button class="call"><i class="fa-solid fa-phone"></i></button>
+    <div class="card move">
+       <div class="imgbox">
+          <img src="/image/ảnh đại diện.jpg" alt="">
+       </div>
+       <div class="name-job">
+          <h3>Lê Phát Đạt</h3>
+          <h5>Phát Đạt - Media</h5>
+        </div>
+        <div class="skills">
+          <button class="btn-Follow"><a href="https://www.tiktok.com/@phatdatle373">Follow</a></button>
+          <button class="btn-Message"><a href="https://www.facebook.com/phatdatle373?mibextid=ZbWKwL">Message</a>   </button>
+        </div>
 
         </div>
-        <div class="display">
-            <div class="photo-music">
-
+        <div class="icons">
+            <div class="icon">
+                <i class="fa-brands fa-twitter front"></i>
+                <i class="fa-brands fa-twitter back"></i>
+                <i class="fa-brands fa-twitter left"></i>
+                <i class="fa-brands fa-twitter right"></i>
+                <i class="fa-brands fa-twitter top"></i>
+                <i class="fa-brands fa-twitter bottom"></i>
+            </a>
             </div>
-            <div class="text">
-                <div class="text-box">
-                    <div class="name-music"></div>
-                    <div class="name-music"></div>
-                </div>
+            <div class="icon">
+                <i class="fa-brands fa-youtube front"></i>
+                <i class="fa-brands fa-youtube back"></i>
+                <i class="fa-brands fa-youtube left"></i>
+                <i class="fa-brands fa-youtube right"></i>
+                <i class="fa-brands fa-youtube top"></i>
+                <i class="fa-brands fa-youtube bottom"></i>
             </div>
-            <i class="singer-name"></i>
-        </div>
-        <div class="player">
-            <i id="back-btn" class="fa-solid fa-backward control-btn "></i>
-            <i id="play-btn" class=" fa-solid fa-play control-btn big "></i>
-            <i id="pause-btn" class=" fa-solid fa-pause control-btn big "></i>
-            <i id="next-btn" class="fa-solid fa-forward control-btn "></i>
-            <audio id="audio" preload="metadata" type="audio/mp3" src=""></audio>
-
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f front"></i>
+                <i class="fa-brands fa-facebook-f back"></i>
+                <i class="fa-brands fa-facebook-f left"></i>
+                <i class="fa-brands fa-facebook-f right"></i>
+                <i class="fa-brands fa-facebook-f top"></i>
+                <i class="fa-brands fa-facebook-f bottom"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-whatsapp front"></i>
+                <i class="fa-brands fa-whatsapp back"></i>
+                <i class="fa-brands fa-whatsapp left"></i>
+                <i class="fa-brands fa-whatsapp right"></i>
+                <i class="fa-brands fa-whatsapp top"></i>
+                <i class="fa-brands fa-whatsapp bottom"></i>
+            </div>
         </div>
     </div>
-    <script src="./script.js">
-    </script>
-</body>
 
+</body>
 </html>
+<script>
+    var container=document.querySelector('.container')
+    var icons=document.querySelector('.icons')
+    var call=document.querySelector('.call')
+    var body =document.querySelector('body')
+    var card=document.querySelector('.card')
+    // body.addEventListener('onload',function(){
+        setTimeout(function(){
+        container.classList.add('move')
+    },3000)
+    // })
+   setTimeout(function(){
+    icons.style="opacity: 0"
+    call.style="opacity: 0"
+   },2000)
+   setTimeout(function(){
+    card.classList.remove('move')
+    icons.style="opacity: 1"
+    call.style="opacity: 1"
+   },6000)
+    
+</script>
