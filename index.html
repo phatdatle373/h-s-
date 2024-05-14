@@ -1,5 +1,40 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang='en'>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phát Đạt - Media</title>
+    <!--font awasome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--my css file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <video autoplay muted plays-inline loop>
+        <source src="image/video (2).mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <button class="call"><i class="fa-solid fa-phone"></i></button>
+    <div class="card move">
+       <div class="imgbox">
+          <img src="image/anhdaidien.jpg" alt="">
+       </div>
+       <div class="name-job">
+          <h3>Lê Phát Đạt</h3>
+          <h5>Phát Đạt - Media</h5>
+        </div>
+        <div class="skills">
+          <button class="btn-Follow"><a href="https://www.tiktok.com/@phatdatle373">Follow</a></button>
+          <button class="btn-Message"><a href="https://www.facebook.com/phatdatle373?mibextid=ZbWKwL">Message</a>   </button>
+        </div>
+>>>>>>> 95b1eb48adc8594b71854e665e3ce55de624374c
 
 <head>
     <meta charset='UTF-8'>
@@ -73,5 +108,31 @@
     <script src="./config.js"></script>
     <script src="./action.js"></script>
 </body>
+<<<<<<< HEAD
 
 </html>
+=======
+</html>
+<script>
+    var container=document.querySelector('.container')
+    var icons=document.querySelector('.icons')
+    var call=document.querySelector('.call')
+    var body =document.querySelector('body')
+    var card=document.querySelector('.card')
+    // body.addEventListener('onload',function(){
+        setTimeout(function(){
+        container.classList.add('move')
+    },3000)
+    // })
+   setTimeout(function(){
+    icons.style="opacity: 0"
+    call.style="opacity: 0"
+   },2000)
+   setTimeout(function(){
+    card.classList.remove('move')
+    icons.style="opacity: 1"
+    call.style="opacity: 1"
+   },6000)
+    
+</script>
+>>>>>>> 95b1eb48adc8594b71854e665e3ce55de624374c
